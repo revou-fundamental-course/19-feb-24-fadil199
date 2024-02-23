@@ -1,0 +1,57 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigation {
+    list-style-type: none;
+}
+
+.navigation li{
+    display: inline;
+    margin: 5px;
+}
+
+.logo1 {
+    border-radius: 50px;
+}
+
+.our-office {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inquiry-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.output {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+}
