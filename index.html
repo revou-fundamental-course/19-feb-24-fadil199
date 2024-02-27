@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-    <header>
-        <img src="assets/unnamed.jpg" alt="logo" class="logo1">
-        <ul class="navigation">
-            <li>Home</li>
-            <li>Our Profile</li>
-            <li>Message Us</li>
-        </ul>
-    </header>
-
+    <div class="wrapper">
+        <nav class="container">
+            <img src="assets/unnamed.jpg" class="logo" width="50" height="50">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    
+    <br>
     <div class="center">
         <img class="img-slideshow" src="assets/images.jpeg" alt="">
         <img class="img-slideshow" src="assets/images (1).jpeg" alt="">
         <img class="img-slideshow" src="assets/images(3).jpg" alt="">
         <br>
-        <button onclick="plusDivs(-1)">Previous</button>
-        <button onclick="plusDivs(1)">Next</button>
+        <button class="btn-1" onclick="plusDivs(-1)"><</button>
+        <button class="btn-2" onclick="plusDivs(1)">></button>
+    </div>
     </div>
 
     <div class="our-office">
