@@ -55,3 +55,9 @@ header {
     height: 100px;
     padding: 100px;
 }
+
+.img-slideshow {
+    width: 1000px;
+    height: 300px;
+    margin: 0px 200px 0px 200px;
+}
