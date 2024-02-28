@@ -12,7 +12,7 @@
             <img src="assets/images (2).jpeg" class="logo" width="50" height="50">
             <div class="home"><a style="text-decoration:none" href="#awal">Beranda</a></div>
             <div class="our-profile"><a style="text-decoration:none" href="#about-us">Profil Kami</a></div>
-            <div class="message-us"><a style="text-decoration:none" href="">Hubungi Kami</a></div>
+            <div class="message-us"><a style="text-decoration:none" href="#message">Hubungi Kami</a></div>
         </nav>
     
     <br>
@@ -26,7 +26,7 @@
         <button class="btn-2" onclick="plusDivs(1)">></button>
     </div>
     </div>
-
+    <hr>
     <div class="wrapper" id="about-us">
         <h1>ABC Companies</h1>
         <br>
@@ -48,34 +48,93 @@
                     Kesejahteraan kepada karyawan.</p>
             </div>
         </div>
+        <br>
+
+        <h1>Kantor Cabang</h1>
+        <p>Kantor kami terdapat di beberapa wilayah guna memudahkan pelanggan</p>
         <div class="our-office">
             <div>
                 <div class="circle-image" style="background-image: url(assets/jakarta.jpeg);"></div>
                 <h5>Jakarta</h5>
+                <h5>Jl. Siaga Raya No.45</h5>
             </div>
             <div>
                 <div class="circle-image" style="background-image: url(assets/bandung.jpeg);"></div>
                 <h5>Bandung</h5>
+                <h5>Jl. Merdeka No.178</h5>
             </div>
             <div>
                 <div class="circle-image" style="background-image: url(assets/bali.jpeg);"></div>
                 <h5>Bali</h5>
+                <h5>Jl. Teuku Umar No.2</h5>
             </div>
         </div>
     </div>
-
-    <div class="inquiry-box">
-        <form class="inquiry-form" action="">
-            <label for="name">Nama</label>
-            <input type="text" id="name" name="name">
-            <label for="gender">Jenis Kelamin</label>
-            <select id="gender">
-                <option value="male">Laki-laki</option>
-                <option value="feemale">Perempuan</option>
-            </select>
-        </form>
-        <div class="output">
-
+    <hr>
+    <div class="wrapper-1" id="message">
+        <h1>Hubungi Kami</h1>
+        <p>Kamu bisa menghubungi kami dengan mengirimkan pesan di bawah ini</p>
+        <div class="inquiry-box">
+            <div>
+                <!-- <form name="message-form" onsubmit="return validateForm()">
+                    <input type="text" placeholder="Nama Anda" id="name-input" name="name-input">
+                    <button id="kirim" type="submit">kirim</button>
+                    <p id="error-name"></p>
+                </form>  -->
+                <form name="message-form" onsubmit="return validateForm()">
+                    <label class="lbl1">Nama</label>
+                    <label class="">:</label>
+                    <input type="text" placeholder="Nama" id="name-input" name="name-input">
+                    <p id="error-name"></p>
+                    <br>
+                    <label for="tanggal_lahir" class="lbl2">Tanggal Lahir</label>
+                    <label for="" class="">:</label>
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                    <p id="error-name"></p>
+                    <br>
+                    <label for="jenis_kelamin" class="lbl3">Jenis Kelamin</label>
+                    <label for="" class="">:</label>
+                    <input type="radio" id="jenis_kelamin" name="fav-language" value="Laki-laki">Laki-laki
+                    <input type="radio" id="jenis_kelamin" name="fav-language" value="Perempuan">Perempuan
+                    <p id="error-name"></p>
+                    <br>
+                    <label for="pesan" class="lbl4">Pesan</label>
+                    <label for="" class="">:</label>
+                    <textarea name="pesan" id="pesan" cols="30" rows="3"></textarea>
+                    <p id="error-name"></p> 
+                    <br>
+                    <button id="kirim" type="submit">kirim</button>
+                </form>
+            </div>
+            <div class="output">
+                <table>
+                    <tr>
+                        <th>Waktu</th>
+                        <td class="td">:</td>
+                        <td id="date"></td>
+                    </tr>
+                    <tr>
+                        <th>Nama</th>
+                        <td class="td">:</td>
+                        <td id="name1"></td>
+                    </tr>
+                    <tr>
+                        <th>Tanggal Lahir</th>
+                        <td class="td">:</td>
+                        <td id="lahir"></td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <td class="td">:</td>
+                        <td id="jk"></td>
+                    </tr>
+                    <tr>
+                        <th>Pesan</th>
+                        <td class="td">:</td>
+                        <td id="ps"></td>
+                    </tr>
+                </table>
+            </div> 
         </div>
     </div>
 

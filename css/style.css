@@ -1,10 +1,11 @@
 html {
     scroll-behavior: smooth;
   }
+
 .wrapper {
     width: auto;
-    border: 1px solid black;
-    height: 610px;
+    border: 0px solid black;
+    height: 613px;
 }
 .container {
     border: 0px solid #ffcc5c;
@@ -29,6 +30,7 @@ html {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin-top: 60px;
 }
 
 .circle-image {
@@ -44,7 +46,8 @@ html {
 
 .inquiry-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
 .inquiry-form {
@@ -55,7 +58,7 @@ html {
 
 .output {
     border: 2px solid black;
-    width: 100px;
+    width: 250px;
     height: 100px;
     padding: 100px;
 }
@@ -110,4 +113,65 @@ h1 {
     justify-content: space-around;
     text-align: center;
     padding: 0px 5px 0px 5px;
+}
+
+p {
+    text-align: center;
+}
+
+.wrapper-1 {
+    width: auto;
+    border: 0px solid black;
+    height: 500px;
+}
+
+#name-input {
+    box-sizing: border-box;
+    padding: 0px 21px 0px 35px;
+}
+
+#tanggal_lahir {
+    box-sizing: border-box;
+    padding: 0px 58px 0px 55px;
+}
+
+#kirim {
+    margin: 0px auto;
+    display: block;
+    padding: 0px 150px 0px 150px;
+    text-align: center;
+    
+}
+
+.lbl1 {
+    border: 0px solid white;
+    box-sizing: border-box;
+    padding-right: 57px;
+}
+
+.lbl2 {
+    border: 0px solid white;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.lbl3 {
+    border: 0px solid white;
+    box-sizing: border-box;
+    padding-right: 5px;
+}
+
+.lbl4 {
+    border: 0px solid white;
+    box-sizing: border-box;
+    padding-right: 58px;
+}
+
+table {
+   margin: -95px 0px 0px -95px;
+   text-align: left;
+}
+
+th {
+    width: 100px;
 }
