@@ -21,10 +21,6 @@ function showDivs(n) {
 const nama1 = prompt("Siapa namamu?");
 const nama = document.getElementById("name").innerHTML = nama1;
 
-// let years = Date();
-// a = years.toString().slice(0, 24);
-// document.getElementById("date").innerHTML = a;
-
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
     const lahir = document.forms['message-form']['tanggal_lahir'].value
@@ -35,8 +31,11 @@ function validateForm() {
     const a = years.toString().slice(0, 24);
 
 
-    if (nama == '' || lahir == '') {
+    if (nama == '' || lahir == '' || jk == '' || pesan == '') {
         document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong!!"
+        document.getElementById("error-name1").innerHTML = "Tidak Boleh Kosong!!"
+        document.getElementById("error-name2").innerHTML = "Tidak Boleh Kosong!!"
+        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
 
         return false
     }
@@ -53,4 +52,7 @@ function setName({nama, lahir, jk, pesan, a}) {
     document.getElementById("jk").innerHTML = jk;
     document.getElementById("ps").innerHTML = pesan;
     document.getElementById("error-name").innerHTML = ""
+    document.getElementById("error-name1").innerHTML = ""
+    document.getElementById("error-name2").innerHTML = ""
+    document.getElementById("error-name3").innerHTML = ""
 }
