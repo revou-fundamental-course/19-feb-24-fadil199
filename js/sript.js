@@ -17,3 +17,6 @@ function showDivs(n) {
 
     imgList[slideIndex - 1].style.display = "block";
 }
+
+const nama1 = prompt("Siapa namamu?");
+const nama = document.getElementById("name").innerHTML = nama1;
