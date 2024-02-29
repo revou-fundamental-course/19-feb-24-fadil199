@@ -31,15 +31,44 @@ function validateForm() {
     const a = years.toString().slice(0, 24);
 
 
-    if (nama == '' || lahir == '' || jk == '' || pesan == '') {
-        document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong!!"
-        document.getElementById("error-name1").innerHTML = "Tidak Boleh Kosong!!"
-        document.getElementById("error-name2").innerHTML = "Tidak Boleh Kosong!!"
-        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
+    // if (nama == '' || lahir == '' || jk == '' || pesan == '') {
+    //     document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong!!"
+    //     document.getElementById("error-name1").innerHTML = "Tidak Boleh Kosong!!"
+    //     document.getElementById("error-name2").innerHTML = "Tidak Boleh Kosong!!"
+    //     document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
 
+    //     return false
+    // }
+
+    if (nama == '') {
+        document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong!!"
         return false
+    } else {
+        document.getElementById("error-name").innerHTML = ""
     }
 
+    if (lahir == '') {
+        document.getElementById("error-name1").innerHTML = "Tidak Boleh Kosong!!"
+        return false
+    } else {
+        document.getElementById("error-name1").innerHTML = ""
+    }
+
+    if (jk == '') {
+        document.getElementById("error-name2").innerHTML = "Tidak Boleh Kosong!!"
+            return false
+    } else {
+        document.getElementById("error-name2").innerHTML = ""
+    }
+
+    if (pesan == '') {
+        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
+        return false
+    } else {
+        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
+    }
+
+    
     setName({nama, lahir, jk, pesan, a});
 
     return false;
