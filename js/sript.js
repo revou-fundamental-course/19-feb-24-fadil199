@@ -3,6 +3,7 @@ function refreshHalaman() {
 }
 
 const nama1 = prompt("Siapa namamu?");
+if (nama1 == '') document.getElementById("name").innerHTML = 'gengs';
 const nama = document.getElementById("name").innerHTML = nama1[0].toUpperCase() + nama1.slice(1);
 
 var slideIndex = 1;
