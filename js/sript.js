@@ -19,7 +19,7 @@ function showDivs(n) {
 }
 
 const nama1 = prompt("Siapa namamu?");
-const nama = document.getElementById("name").innerHTML = nama1;
+const nama = document.getElementById("name").innerHTML = nama1[0].toUpperCase() + nama1.slice(1);
 
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
@@ -76,10 +76,10 @@ function validateForm() {
 
 function setName({nama, lahir, jk, pesan, a}) {
     document.getElementById("date").innerHTML = a;
-    document.getElementById("name1").innerHTML = nama;
+    document.getElementById("name1").innerHTML = nama[0].toUpperCase() + nama.slice(1);
     document.getElementById("lahir").innerHTML = lahir;
     document.getElementById("jk").innerHTML = jk;
-    document.getElementById("ps").innerHTML = pesan;
+    document.getElementById("ps").innerHTML = pesan[0].toUpperCase() + pesan.slice(1);
     document.getElementById("error-name").innerHTML = ""
     document.getElementById("error-name1").innerHTML = ""
     document.getElementById("error-name2").innerHTML = ""
