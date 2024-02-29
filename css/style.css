@@ -88,6 +88,7 @@ html {
   left: 49%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border-radius: 50px;
 }
 
 .btn-2 {
@@ -97,6 +98,7 @@ html {
   left: 51%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border-radius: 50px;
 }
 
 h1 {
