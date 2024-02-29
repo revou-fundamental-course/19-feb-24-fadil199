@@ -125,12 +125,12 @@ p {
 
 #name-input {
     box-sizing: border-box;
-    padding: 0px 21px 0px 35px;
+    padding: 0px 50px 0px 6px;
 }
 
 #tanggal_lahir {
     box-sizing: border-box;
-    padding: 0px 58px 0px 55px;
+    padding: 0px 107px 0px 6px;
 }
 
 #kirim {
