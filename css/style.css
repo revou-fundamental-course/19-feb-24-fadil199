@@ -178,6 +178,10 @@ textarea {
     resize: none;
 }
 
+footer {
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     .container, .center, .about, .our-office, .inquiry-box {
         flex-direction: column;
@@ -215,6 +219,10 @@ textarea {
 
     .output {
         margin-bottom: 10px;
+    }
+
+    .footer {
+        margin-top: 170px;
     }
 
 }
