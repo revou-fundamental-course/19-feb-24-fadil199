@@ -61,8 +61,8 @@ function validateForm() {
         document.getElementById("error-name2").innerHTML = ""
     }
 
-    if (pesan == '') {
-        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
+    if (pesan == '' || pesan.length < 10) {
+        document.getElementById("error-name3").innerHTML = "Pesan tidak boleh kosong atau <br>pesan anda kurang dari 10 karakter!"
         return false
     } else {
         document.getElementById("error-name3").innerHTML = ""
