@@ -1,3 +1,10 @@
+function refreshHalaman() {
+    window.location.reload();
+}
+
+const nama1 = prompt("Siapa namamu?");
+const nama = document.getElementById("name").innerHTML = nama1[0].toUpperCase() + nama1.slice(1);
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -17,9 +24,6 @@ function showDivs(n) {
 
     imgList[slideIndex - 1].style.display = "block";
 }
-
-const nama1 = prompt("Siapa namamu?");
-const nama = document.getElementById("name").innerHTML = nama1[0].toUpperCase() + nama1.slice(1);
 
 function validateForm() {
     const nama = document.forms['message-form']['name-input'].value
