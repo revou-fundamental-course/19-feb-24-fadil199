@@ -56,7 +56,7 @@ function validateForm() {
 
     if (jk == '') {
         document.getElementById("error-name2").innerHTML = "Tidak Boleh Kosong!!"
-            return false
+        return false
     } else {
         document.getElementById("error-name2").innerHTML = ""
     }
@@ -65,7 +65,7 @@ function validateForm() {
         document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
         return false
     } else {
-        document.getElementById("error-name3").innerHTML = "Tidak Boleh Kosong!!"
+        document.getElementById("error-name3").innerHTML = ""
     }
 
     
